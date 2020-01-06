@@ -1,0 +1,12 @@
+name: 'Create Jira tickets for CVEs found by dependency-check'
+description: 'Run dependency-check and create Jira issues for new CVEs found.'
+author: 'reload'
+outputs:
+  result:
+    description: 'Run dependency-check and create Jira issues for new CVEs found'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'rotate-cw'
+  color: 'green'

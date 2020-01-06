@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use DependencyCheckJira\CheckCommand;
+
+$application = new Application('dependency-check-jira');
+
+$command = new CheckCommand();
+
+$application->add($command);
+$application->setDefaultCommand('check');
+$application->run();
