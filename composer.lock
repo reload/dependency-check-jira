@@ -347,12 +347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reload/jira-security-issue.git",
-                "reference": "73218cd75c8a7f9aa0eaa3561c5e5490874120fa"
+                "reference": "639d0d3183eb0a8cb122b4d7507b475de6443a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/73218cd75c8a7f9aa0eaa3561c5e5490874120fa",
-                "reference": "73218cd75c8a7f9aa0eaa3561c5e5490874120fa",
+                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/639d0d3183eb0a8cb122b4d7507b475de6443a15",
+                "reference": "639d0d3183eb0a8cb122b4d7507b475de6443a15",
                 "shasum": ""
             },
             "require": {
@@ -385,7 +385,7 @@
                 "source": "https://github.com/reload/jira-security-issue/tree/master",
                 "issues": "https://github.com/reload/jira-security-issue/issues"
             },
-            "time": "2020-01-08T12:47:22+00:00"
+            "time": "2020-01-08T13:14:54+00:00"
         },
         {
             "name": "symfony/console",
