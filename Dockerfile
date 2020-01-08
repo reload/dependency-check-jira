@@ -1,3 +1,11 @@
+FROM composer:1.9 AS build-env
+
+COPY . /opt/dependency-check-jira
+
+WORKDIR /opt/dependency-check-jira
+
+RUN composer install --prefer-dist --no-dev
+
 FROM php:7.3.12-alpine
 
 ARG DEPENDENCY_CHECK_VERSION=5.2.4
@@ -27,7 +35,7 @@ RUN cd /opt && \
         unzip dependency-check-${DEPENDENCY_CHECK_VERSION}-release.zip && \
         rm dependency-check-${DEPENDENCY_CHECK_VERSION}-release.zip
 
-COPY . /opt/dependency-check-jira
+COPY --from=build-env /opt/dependency-check-jira /opt/dependency-check-jira
 
 ENTRYPOINT ["/opt/dependency-check-jira/bin/checkdep"]
 CMD []
