@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace DependencyCheckJira;
 
+use Reload\JiraSecurityIssue;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -32,6 +33,12 @@ class CheckCommand extends Command
                 null,
                 InputOption::VALUE_NONE,
                 'Do dry run (dont change anything)',
+            )
+            ->addOption(
+                'trial-run',
+                null,
+                InputOption::VALUE_NONE,
+                'Trial run (creates an example issue)',
             );
     }
 
@@ -39,6 +46,53 @@ class CheckCommand extends Command
      * {@inheritDoc}
      */
     protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        if (!$input->getOption('trial-run')) {
+            $outfile = $this->runDependencyChecker($output);
+        } else {
+            $outfile = dirname(__DIR__) . '/data/trial.csv';
+        }
+
+        $parser = new DepCheckCsvParser($outfile);
+
+        $repo = getenv('GITHUB_REPOSITORY');
+
+        foreach ($parser->getCves() as $csv) {
+            $output->write(sprintf("Detected %s on package %s in %s", $csv['cve'], $csv['name'], $csv['path']));
+
+            if (!$input->getOption('dry-run')) {
+                $issue = new JiraSecurityIssue();
+
+                $body = '';
+
+                if ($repo) {
+                    $body .= "- Repository: [{$repo}|https://github.com/{$repo}]\n";
+                }
+
+                $body .= "- Links: [{$csv['cve']}|https://cve.mitre.org/cgi-bin/cvename.cgi?name={$csv['cve']}]\n\n";
+
+                $body .= $csv['description'];
+
+                $issue
+                    ->setTitle($csv['name'] . ' might be vulnerable to ' . $csv['cve'])
+                    ->setBody($body);
+
+                $issue->setKeyLabel($csv['name'] . ':' . $csv['cve']);
+
+                if ($repo) {
+                    $issue->setKeyLabel($repo);
+                }
+
+                $id = $issue->ensure();
+
+                $output->write(': ' . $id);
+            }
+
+            $output->writeln('');
+        }
+    }
+
+    public function runDependencyChecker(OutputInterface $output)
     {
         $checkdep = new Process([
             '/opt/dependency-check/bin/dependency-check.sh',
@@ -94,10 +148,6 @@ class CheckCommand extends Command
             throw new \RuntimeException('Error running dependency-checker');
         }
 
-        $parser = new DepCheckCsvParser($outfile);
-
-        foreach ($parser->getCves() as $csv) {
-            $output->writeln(sprintf("Detected %s on package %s in %s", $csv['cve'], $csv['name'], $csv['path']));
-        }
+        return $outfile;
     }
 }

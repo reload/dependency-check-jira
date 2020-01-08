@@ -29,4 +29,5 @@ RUN cd /opt && \
 
 COPY . /opt/dependency-check-jira
 
-ENTRYPOINT /opt/dependency-check-jira/bin/checkdep
+ENTRYPOINT ["/opt/dependency-check-jira/bin/checkdep"]
+CMD []

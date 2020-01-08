@@ -5,13 +5,20 @@
     "require": {
         "php": "^7.3",
         "symfony/process": "^5.0",
-        "symfony/console": "^4"
+        "symfony/console": "^4",
+        "reload/jira-security-issue": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.5",
         "phpunit/phpunit": "^8.5",
         "sempro/phpunit-pretty-print": "^1.2"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/reload/jira-security-issue"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "DependencyCheckJira\\": "src/"
