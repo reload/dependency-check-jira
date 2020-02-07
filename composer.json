@@ -12,9 +12,14 @@
     "require-dev": {
         "behat/behat": "^3.5",
         "phpunit/phpunit": "^8.5",
-        "sempro/phpunit-pretty-print": "^1.2"
+        "sempro/phpunit-pretty-print": "^1.2",
+        "appocular/coding-standard": "^1.0"
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/appocular/coding-standard"
+        },
         {
             "type": "vcs",
             "url": "https://github.com/reload/jira-security-issue"
