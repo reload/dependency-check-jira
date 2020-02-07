@@ -23,7 +23,7 @@ class CheckCommand extends Command
     /**
      * {@inheritDoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Create Jira tickets for CVEs found by dependency-check.')
@@ -94,7 +94,7 @@ class CheckCommand extends Command
         return 0;
     }
 
-    public function runDependencyChecker(OutputInterface $output)
+    public function runDependencyChecker(OutputInterface $output): string
     {
         $checkdep = new Process([
             '/opt/dependency-check/bin/dependency-check.sh',

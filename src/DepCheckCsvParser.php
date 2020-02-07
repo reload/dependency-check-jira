@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 namespace DependencyCheckJira;
 
+use RuntimeException;
+
 class DepCheckCsvParser
 {
     /**
      * Maps our field names to the CSV columns.
      */
-    public const FIELDS = ['name' => 'DependencyName', 'path' => 'DependencyPath', 'cve' => 'CVE', 'description' => 'Vulnerability'];
+    public const FIELDS = [
+        'name' => 'DependencyName',
+        'path' => 'DependencyPath',
+        'cve' => 'CVE',
+        'description' => 'Vulnerability'
+    ];
 
     /**
      * @var string the file to parse.
@@ -21,14 +28,23 @@ class DepCheckCsvParser
         $this->filename = $filename;
     }
 
+    /**
+     * @return array<array>
+     */
     public function getCves(): array
     {
         $data = [];
         $fh = fopen($this->filename, "r");
-        while (($row = fgetcsv($fh)) !== false) {
+
+        if (!$fh) {
+            throw new RuntimeException("Cannot open file");
+        }
+
+        while ($row = fgetcsv($fh)) {
             $data[] = $row;
         }
 
+        /** @var array<string> $header */
         $header = array_shift($data);
         $fields = $this->getFieldIndexes($header);
 
@@ -62,7 +78,7 @@ class DepCheckCsvParser
                 throw new \RuntimeException($csvName . ' column not found in CSV');
             }
 
-            $mapping[$name] = $index;
+            $mapping[$name] = intval($index);
         }
 
         return $mapping;

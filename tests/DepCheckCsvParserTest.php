@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class DepCheckCsvParserTest extends TestCase
 {
-    public function testParsing()
+    public function testParsing(): void
     {
         $parser = new DepCheckCsvParser(__DIR__ . '/../fixtures/csv/dependency-check-report.csv');
 
@@ -32,7 +32,7 @@ class DepCheckCsvParserTest extends TestCase
     /**
      * Test header mapping.
      */
-    public function testHeaderMapping()
+    public function testHeaderMapping(): void
     {
         $parser = new DepCheckCsvParser(__DIR__ . '/../fixtures/csv/dependency-check-report.csv');
 
@@ -50,7 +50,7 @@ class DepCheckCsvParserTest extends TestCase
     /**
      * Test that getFieldIndexes throws error on missing columns.
      */
-    public function testHeaderMappingError()
+    public function testHeaderMappingError(): void
     {
         $parser = new DepCheckCsvParser(__DIR__ . '/../fixtures/csv/dependency-check-report.csv');
 

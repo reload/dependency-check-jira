@@ -1,0 +1,8 @@
+parameters:
+    level: max
+    excludes_analyse:
+        - vendor
+    ignoreErrors:
+        -
+            message: '#type has no value type specified in iterable type Symfony\\Component\\Process\\Process#'
+            path: 'features/bootstrap/FeatureContext.php'
