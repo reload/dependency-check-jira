@@ -27,7 +27,7 @@ class FeatureContext implements Context, SnippetAcceptingContext
     protected $fixture = 'empty';
 
     /**
-     * @var \Symfony\Component\Process\Process the docker process.
+     * @var ?\Symfony\Component\Process\Process the docker process.
      */
     protected $process;
 
@@ -45,7 +45,7 @@ class FeatureContext implements Context, SnippetAcceptingContext
     /**
      * @BeforeSuite
      */
-    public static function buildImage()
+    public static function buildImage(): void
     {
         $process = new Process(['docker', 'build', '.', '-t', self::IMAGE]);
         $process->mustRun();
@@ -54,7 +54,7 @@ class FeatureContext implements Context, SnippetAcceptingContext
     /**
      * @Given the fixture :fixture
      */
-    public function theFixture($fixture)
+    public function theFixture(string $fixture): void
     {
         if (!file_exists(self::FIXTURES . $fixture)) {
             throw new \RuntimeException('Unknown fixture ' . self::FIXTURES . $fixture);
@@ -66,7 +66,7 @@ class FeatureContext implements Context, SnippetAcceptingContext
     /**
      * @When running
      */
-    public function running()
+    public function running(): void
     {
         $this->process = new Process([
             'docker',
@@ -88,7 +88,7 @@ class FeatureContext implements Context, SnippetAcceptingContext
     /**
      * @Then it should succeed with output containing:
      */
-    public function itShouldSucceedWithOutputContaining(PyStringNode $string)
+    public function itShouldSucceedWithOutputContaining(PyStringNode $string): void
     {
         if (!$this->process) {
             throw new \RuntimeException('No process was run');

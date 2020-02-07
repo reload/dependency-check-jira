@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace DependencyCheckJira;
 
 use Reload\JiraSecurityIssue;
+use RuntimeException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -23,7 +24,7 @@ class CheckCommand extends Command
     /**
      * {@inheritDoc}
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Create Jira tickets for CVEs found by dependency-check.')
@@ -47,18 +48,16 @@ class CheckCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        if (!$input->getOption('trial-run')) {
-            $outfile = $this->runDependencyChecker($output);
-        } else {
-            $outfile = dirname(__DIR__) . '/data/trial.csv';
-        }
+        $outfile = !$input->getOption('trial-run')
+            ? $this->runDependencyChecker($output)
+            : \dirname(__DIR__) . '/data/trial.csv';
 
         $parser = new DepCheckCsvParser($outfile);
 
-        $repo = getenv('GITHUB_REPOSITORY');
+        $repo = \getenv('GITHUB_REPOSITORY');
 
         foreach ($parser->getCves() as $csv) {
-            $output->write(sprintf("Detected %s on package %s in %s", $csv['cve'], $csv['name'], $csv['path']));
+            $output->write(\sprintf("Detected %s on package %s in %s", $csv['cve'], $csv['name'], $csv['path']));
 
             if (!$input->getOption('dry-run')) {
                 $issue = new JiraSecurityIssue();
@@ -90,9 +89,11 @@ class CheckCommand extends Command
 
             $output->writeln('');
         }
+
+        return 0;
     }
 
-    public function runDependencyChecker(OutputInterface $output)
+    public function runDependencyChecker(OutputInterface $output): string
     {
         $checkdep = new Process([
             '/opt/dependency-check/bin/dependency-check.sh',
@@ -145,7 +146,7 @@ class CheckCommand extends Command
         $outfile = '/tmp/dependency-check-report.csv';
 
         if (!\file_exists($outfile)) {
-            throw new \RuntimeException('Error running dependency-checker');
+            throw new RuntimeException('Error running dependency-checker');
         }
 
         return $outfile;
