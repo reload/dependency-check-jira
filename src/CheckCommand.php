@@ -90,6 +90,8 @@ class CheckCommand extends Command
 
             $output->writeln('');
         }
+
+        return 0;
     }
 
     public function runDependencyChecker(OutputInterface $output)
