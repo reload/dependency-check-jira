@@ -12,7 +12,6 @@
     "require-dev": {
         "behat/behat": "^3.5",
         "phpunit/phpunit": "^9.0",
-        "sempro/phpunit-pretty-print": "^1.2",
         "appocular/coding-standard": "^1.0"
     },
     "repositories": [
