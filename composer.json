@@ -6,23 +6,18 @@
         "php": "^7.3",
         "symfony/process": "^5.0",
         "symfony/console": "^5",
-        "reload/jira-security-issue": "dev-master",
-        "phpstan/phpstan": "^0.12.9"
+        "phpstan/phpstan": "^0.12.9",
+        "reload/jira-security-issue": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.5",
         "phpunit/phpunit": "^9.0",
-        "sempro/phpunit-pretty-print": "^1.2",
         "appocular/coding-standard": "^1.0"
     },
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/appocular/coding-standard"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/reload/jira-security-issue"
         }
     ],
     "autoload": {
