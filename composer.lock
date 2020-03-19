@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "edac924fb4f69adc3840fc8942976879",
+    "content-hash": "65f39b8f2f5ed593960f65c44de0657d",
     "packages": [
         {
             "name": "lesstif/php-jira-rest-client",
@@ -429,19 +429,11 @@
                     "Reload\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Reload\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Create Jira issues if it doesn't exist",
-            "support": {
-                "source": "https://github.com/reload/jira-security-issue/tree/master",
-                "issues": "https://github.com/reload/jira-security-issue/issues"
-            },
             "time": "2020-03-19T08:31:48+00:00"
         },
         {
