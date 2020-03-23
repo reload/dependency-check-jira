@@ -6,7 +6,7 @@ WORKDIR /opt/dependency-check-jira
 
 RUN composer install --prefer-dist --no-dev
 
-FROM php:7.4.3-alpine
+FROM php:7.4.4-alpine
 
 ARG DEPENDENCY_CHECK_VERSION=5.2.4
 
