@@ -7,7 +7,7 @@
         "symfony/process": "^5.0",
         "symfony/console": "^5",
         "phpstan/phpstan": "^0.12.9",
-        "reload/jira-security-issue": "dev-master"
+        "reload/jira-security-issue": "^1.0.0"
     },
     "require-dev": {
         "behat/behat": "^3.5",
