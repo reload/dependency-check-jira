@@ -8,7 +8,7 @@ RUN composer install --prefer-dist --no-dev
 
 FROM openjdk:14-ea-15-jdk-alpine AS jdk
 
-FROM php:7.4.9-alpine
+FROM php:7.4.10-alpine
 
 ARG DEPENDENCY_CHECK_VERSION=6.0.2
 
