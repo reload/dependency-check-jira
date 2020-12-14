@@ -14,12 +14,6 @@
         "phpunit/phpunit": "^9.0",
         "appocular/coding-standard": "^1.0"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/appocular/coding-standard"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "DependencyCheckJira\\": "src/"
