@@ -124,6 +124,7 @@ class CheckCommand extends Command
             '--disableGolangMod',
             '--disableJar',
             '--disableMixAudit',
+            '--disableMSBuild',
             '--disableNodeAudit',
             '--disableNodeAuditCache',
             '--disableNodeJS',
@@ -133,11 +134,13 @@ class CheckCommand extends Command
             '--disableOssIndex',
             '--disableOssIndexCache',
             '--disablePip',
+            '--disablePipfile',
             '--disablePyDist',
             '--disablePyPkg',
             '--disableRetireJS',
             '--disableRubygems',
             '--disableSwiftPackageManagerAnalyzer',
+            '--disableYarnAudit',
         ]);
 
         $checkdep->setTimeout(0);
