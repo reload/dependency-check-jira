@@ -6,7 +6,7 @@ WORKDIR /opt/dependency-check-jira
 
 RUN composer install --prefer-dist --no-dev
 
-FROM owasp/dependency-check:6.3.2 AS dependency-check
+FROM owasp/dependency-check:6.4.1 AS dependency-check
 
 FROM openjdk:14-ea-15-jdk-alpine AS jdk
 
