@@ -515,16 +515,16 @@
         },
         {
             "name": "reload/jira-security-issue",
-            "version": "v1.0.12",
+            "version": "v1.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reload/jira-security-issue.git",
-                "reference": "862d535d04547b7f23d85a3939f44e87b32b6e59"
+                "reference": "32ffbbf0484a9156e261b69ee6193651f1f83269"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/862d535d04547b7f23d85a3939f44e87b32b6e59",
-                "reference": "862d535d04547b7f23d85a3939f44e87b32b6e59",
+                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/32ffbbf0484a9156e261b69ee6193651f1f83269",
+                "reference": "32ffbbf0484a9156e261b69ee6193651f1f83269",
                 "shasum": ""
             },
             "require": {
@@ -534,7 +534,7 @@
             },
             "require-dev": {
                 "appocular/coding-standard": "^1.0",
-                "phpstan/phpstan": "^0.12.4",
+                "phpstan/phpstan": "^1.0.0",
                 "phpunit/phpunit": "^8.5",
                 "sempro/phpunit-pretty-print": "^1.2",
                 "symfony/console": "^5.0"
@@ -552,9 +552,9 @@
             "description": "Create Jira issues if it doesn't exist",
             "support": {
                 "issues": "https://github.com/reload/jira-security-issue/issues",
-                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.12"
+                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.13"
             },
-            "time": "2021-10-18T07:25:40+00:00"
+            "time": "2021-11-02T05:11:35+00:00"
         },
         {
             "name": "symfony/console",
