@@ -1,4 +1,4 @@
-FROM composer:2.1.10 AS build-env
+FROM composer:2.1.11 AS build-env
 
 COPY . /opt/dependency-check-jira
 
