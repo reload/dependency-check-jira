@@ -515,16 +515,16 @@
         },
         {
             "name": "reload/jira-security-issue",
-            "version": "v1.0.13",
+            "version": "v1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reload/jira-security-issue.git",
-                "reference": "32ffbbf0484a9156e261b69ee6193651f1f83269"
+                "reference": "2bd31fb22e54e9dd3647aa9015c10751dc424c88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/32ffbbf0484a9156e261b69ee6193651f1f83269",
-                "reference": "32ffbbf0484a9156e261b69ee6193651f1f83269",
+                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/2bd31fb22e54e9dd3647aa9015c10751dc424c88",
+                "reference": "2bd31fb22e54e9dd3647aa9015c10751dc424c88",
                 "shasum": ""
             },
             "require": {
@@ -552,9 +552,9 @@
             "description": "Create Jira issues if it doesn't exist",
             "support": {
                 "issues": "https://github.com/reload/jira-security-issue/issues",
-                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.13"
+                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.14"
             },
-            "time": "2021-11-02T05:11:35+00:00"
+            "time": "2021-11-03T05:10:32+00:00"
         },
         {
             "name": "symfony/console",
