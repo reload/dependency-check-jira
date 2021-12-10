@@ -1581,16 +1581,16 @@
     "packages-dev": [
         {
             "name": "appocular/coding-standard",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appocular/coding-standard.git",
-                "reference": "208c8b532a62ed31b8b48db0f9e2a6141c1adfd5"
+                "reference": "38d7b5d31893f8dc92aac51621699fb88a1db799"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appocular/coding-standard/zipball/208c8b532a62ed31b8b48db0f9e2a6141c1adfd5",
-                "reference": "208c8b532a62ed31b8b48db0f9e2a6141c1adfd5",
+                "url": "https://api.github.com/repos/appocular/coding-standard/zipball/38d7b5d31893f8dc92aac51621699fb88a1db799",
+                "reference": "38d7b5d31893f8dc92aac51621699fb88a1db799",
                 "shasum": ""
             },
             "require": {
@@ -1617,9 +1617,9 @@
             ],
             "support": {
                 "issues": "https://github.com/appocular/coding-standard/issues",
-                "source": "https://github.com/appocular/coding-standard/tree/2.0.0"
+                "source": "https://github.com/appocular/coding-standard/tree/2.1.0"
             },
-            "time": "2021-12-02T14:23:40+00:00"
+            "time": "2021-12-09T07:45:42+00:00"
         },
         {
             "name": "behat/behat",
@@ -3896,16 +3896,16 @@
         },
         {
             "name": "slevomat/coding-standard",
-            "version": "7.0.16",
+            "version": "7.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slevomat/coding-standard.git",
-                "reference": "14c324b2f2f0072933036c2f3abaeda16a56dcd3"
+                "reference": "b81ac84f41a4797dc25c8ede1b0718e2a74be0fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/14c324b2f2f0072933036c2f3abaeda16a56dcd3",
-                "reference": "14c324b2f2f0072933036c2f3abaeda16a56dcd3",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/b81ac84f41a4797dc25c8ede1b0718e2a74be0fc",
+                "reference": "b81ac84f41a4797dc25c8ede1b0718e2a74be0fc",
                 "shasum": ""
             },
             "require": {
@@ -3917,11 +3917,11 @@
             "require-dev": {
                 "phing/phing": "2.17.0",
                 "php-parallel-lint/php-parallel-lint": "1.3.1",
-                "phpstan/phpstan": "0.12.99",
-                "phpstan/phpstan-deprecation-rules": "0.12.6",
-                "phpstan/phpstan-phpunit": "0.12.22",
-                "phpstan/phpstan-strict-rules": "0.12.11",
-                "phpunit/phpunit": "7.5.20|8.5.5|9.5.10"
+                "phpstan/phpstan": "1.2.0",
+                "phpstan/phpstan-deprecation-rules": "1.0.0",
+                "phpstan/phpstan-phpunit": "1.0.0",
+                "phpstan/phpstan-strict-rules": "1.1.0",
+                "phpunit/phpunit": "7.5.20|8.5.21|9.5.10"
             },
             "type": "phpcodesniffer-standard",
             "extra": {
@@ -3941,7 +3941,7 @@
             "description": "Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
             "support": {
                 "issues": "https://github.com/slevomat/coding-standard/issues",
-                "source": "https://github.com/slevomat/coding-standard/tree/7.0.16"
+                "source": "https://github.com/slevomat/coding-standard/tree/7.0.18"
             },
             "funding": [
                 {
@@ -3953,7 +3953,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-22T06:56:51+00:00"
+            "time": "2021-12-07T17:19:06+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
