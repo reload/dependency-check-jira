@@ -70,16 +70,16 @@
         },
         {
             "name": "lesstif/php-jira-rest-client",
-            "version": "2.6.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lesstif/php-jira-rest-client.git",
-                "reference": "e650cf1eb9eddbae7f9560b2b161a643caaad4ca"
+                "reference": "889091e1807fc3739f64568a777260f00d096978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/e650cf1eb9eddbae7f9560b2b161a643caaad4ca",
-                "reference": "e650cf1eb9eddbae7f9560b2b161a643caaad4ca",
+                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/889091e1807fc3739f64568a777260f00d096978",
+                "reference": "889091e1807fc3739f64568a777260f00d096978",
                 "shasum": ""
             },
             "require": {
@@ -129,9 +129,9 @@
             ],
             "support": {
                 "issues": "https://github.com/lesstif/php-jira-rest-client/issues",
-                "source": "https://github.com/lesstif/php-jira-rest-client/tree/2.6.0"
+                "source": "https://github.com/lesstif/php-jira-rest-client/tree/3.1.0"
             },
-            "time": "2021-09-21T14:42:49+00:00"
+            "time": "2022-05-07T11:31:02+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -513,20 +513,20 @@
         },
         {
             "name": "reload/jira-security-issue",
-            "version": "v1.0.19",
+            "version": "v1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reload/jira-security-issue.git",
-                "reference": "acbe3cd8fe49056d0adb9c5b996905aa0bead490"
+                "reference": "403d6203c06ac86f8c8a6797f814504e61a183fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/acbe3cd8fe49056d0adb9c5b996905aa0bead490",
-                "reference": "acbe3cd8fe49056d0adb9c5b996905aa0bead490",
+                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/403d6203c06ac86f8c8a6797f814504e61a183fd",
+                "reference": "403d6203c06ac86f8c8a6797f814504e61a183fd",
                 "shasum": ""
             },
             "require": {
-                "lesstif/php-jira-rest-client": "^1.42 || ^2.0",
+                "lesstif/php-jira-rest-client": "^3.1.0",
                 "php": ">=7.2.0",
                 "webignition/symfony-console-typed-input": "^0.4.0"
             },
@@ -550,9 +550,9 @@
             "description": "Create Jira issues if it doesn't exist",
             "support": {
                 "issues": "https://github.com/reload/jira-security-issue/issues",
-                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.19"
+                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.20"
             },
-            "time": "2022-04-19T04:17:26+00:00"
+            "time": "2022-05-09T04:01:54+00:00"
         },
         {
             "name": "symfony/console",
