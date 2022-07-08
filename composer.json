@@ -24,5 +24,10 @@
             "DependencyCheckJira\\": "tests/",
             "": "features/bootstrap/"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
