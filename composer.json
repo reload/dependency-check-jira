@@ -4,7 +4,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "symfony/process": "^5.0",
+        "symfony/process": "^6.3",
         "symfony/console": "^5",
         "phpstan/phpstan": "^1.0.0",
         "reload/jira-security-issue": "^1.0.0"
