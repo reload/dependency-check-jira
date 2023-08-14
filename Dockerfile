@@ -8,7 +8,7 @@ RUN composer install --prefer-dist --no-dev
 
 FROM owasp/dependency-check:8.3.1 AS dependency-check
 
-FROM openjdk:14-ea-15-jdk-alpine AS jdk
+FROM openjdk:17-ea-14-jdk-alpine AS jdk
 
 FROM php:8.0.1-alpine
 
