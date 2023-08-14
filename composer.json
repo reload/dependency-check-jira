@@ -3,7 +3,7 @@
     "description": "Create Jira tickets for CVEs",
     "license": "MIT",
     "require": {
-        "php": "^7.3 || ^8.0",
+        "php": "^8.2",
         "symfony/process": "^5.0",
         "symfony/console": "^5",
         "phpstan/phpstan": "^1.0.0",
