@@ -8,11 +8,11 @@ RUN composer install --prefer-dist --no-dev
 
 FROM owasp/dependency-check:8.3.1 AS dependency-check
 
-FROM openjdk:14-ea-15-jdk-alpine AS jdk
+FROM openjdk:17-ea-14-jdk-alpine AS jdk
 
 FROM php:8.0.1-alpine
 
-ENV JAVA_HOME /opt/openjdk-14
+ENV JAVA_HOME /opt/openjdk-17
 ENV PATH $JAVA_HOME/bin:$PATH
 
 COPY --from=jdk ${JAVA_HOME} ${JAVA_HOME}
