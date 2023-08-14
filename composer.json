@@ -11,7 +11,7 @@
     },
     "require-dev": {
         "behat/behat": "^3.5",
-        "phpunit/phpunit": "^9.0",
+        "phpunit/phpunit": "^10.3",
         "appocular/coding-standard": "^2.0"
     },
     "autoload": {
