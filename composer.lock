@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "lesstif/php-jira-rest-client",
-            "version": "5.7.0",
+            "version": "5.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lesstif/php-jira-rest-client.git",
-                "reference": "1306db5e8c4041fe0ff296b2fa30809618b192b3"
+                "reference": "db8b8d0a8b1aaf30cfe9872633d5e43056f4d7de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/1306db5e8c4041fe0ff296b2fa30809618b192b3",
-                "reference": "1306db5e8c4041fe0ff296b2fa30809618b192b3",
+                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/db8b8d0a8b1aaf30cfe9872633d5e43056f4d7de",
+                "reference": "db8b8d0a8b1aaf30cfe9872633d5e43056f4d7de",
                 "shasum": ""
             },
             "require": {
@@ -69,9 +69,9 @@
             ],
             "support": {
                 "issues": "https://github.com/lesstif/php-jira-rest-client/issues",
-                "source": "https://github.com/lesstif/php-jira-rest-client/tree/5.7.0"
+                "source": "https://github.com/lesstif/php-jira-rest-client/tree/5.8.0"
             },
-            "time": "2023-09-26T15:07:29+00:00"
+            "time": "2024-03-24T12:31:56+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -392,16 +392,16 @@
         },
         {
             "name": "reload/jira-security-issue",
-            "version": "v1.0.49",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reload/jira-security-issue.git",
-                "reference": "4e535d4a04fb5bad6412456e25b9c33e814b9040"
+                "reference": "45b9aa1e85c9752220d65a5cca2b01ad54d5fa8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/4e535d4a04fb5bad6412456e25b9c33e814b9040",
-                "reference": "4e535d4a04fb5bad6412456e25b9c33e814b9040",
+                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/45b9aa1e85c9752220d65a5cca2b01ad54d5fa8d",
+                "reference": "45b9aa1e85c9752220d65a5cca2b01ad54d5fa8d",
                 "shasum": ""
             },
             "require": {
@@ -433,9 +433,9 @@
             "description": "Create Jira issues if it doesn't exist",
             "support": {
                 "issues": "https://github.com/reload/jira-security-issue/issues",
-                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.49"
+                "source": "https://github.com/reload/jira-security-issue/tree/v1.1.0"
             },
-            "time": "2024-03-04T05:03:33+00:00"
+            "time": "2024-04-04T11:36:58+00:00"
         },
         {
             "name": "symfony/console",
@@ -1140,16 +1140,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v3.4.1",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "fe07cbc8d837f60caf7018068e350cc5163681a0"
+                "reference": "11bbf19a0fb7b36345861e85c5768844c552906e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/fe07cbc8d837f60caf7018068e350cc5163681a0",
-                "reference": "fe07cbc8d837f60caf7018068e350cc5163681a0",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/11bbf19a0fb7b36345861e85c5768844c552906e",
+                "reference": "11bbf19a0fb7b36345861e85c5768844c552906e",
                 "shasum": ""
             },
             "require": {
@@ -1202,7 +1202,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/v3.4.1"
+                "source": "https://github.com/symfony/service-contracts/tree/v3.4.2"
             },
             "funding": [
                 {
@@ -1218,7 +1218,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-26T14:02:43+00:00"
+            "time": "2023-12-19T21:51:00+00:00"
         },
         {
             "name": "symfony/string",
