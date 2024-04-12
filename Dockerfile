@@ -10,7 +10,7 @@ FROM owasp/dependency-check:9.1.0 AS dependency-check
 
 FROM openjdk:17-ea-14-jdk-alpine AS jdk
 
-FROM php:8.3.4-alpine3.18@sha256:9c334e1fa29715eb6640ee98233ff25130803dc975f187550990c5198c4f8cf3
+FROM php:8.3.6-alpine3.18@sha256:a2d3001213e2a4c5bd411ae187c9e2c7de2b929aa884bfadf0b5a400cfbd52b4
 
 ENV JAVA_HOME /opt/openjdk-17
 ENV PATH $JAVA_HOME/bin:$PATH
