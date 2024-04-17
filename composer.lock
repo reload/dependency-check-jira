@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2992e2b1d58d8926c35a4ad6b56460c",
+    "content-hash": "dccb49dafd6c79764e6ae43e6fa909a9",
     "packages": [
         {
             "name": "lesstif/php-jira-rest-client",
@@ -392,16 +392,16 @@
         },
         {
             "name": "reload/jira-security-issue",
-            "version": "v1.1.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reload/jira-security-issue.git",
-                "reference": "7904da8291d44bae7b174e7a774434a0033c90f1"
+                "reference": "26a4079d6d279673e957649f66eabb18af4b8a41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/7904da8291d44bae7b174e7a774434a0033c90f1",
-                "reference": "7904da8291d44bae7b174e7a774434a0033c90f1",
+                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/26a4079d6d279673e957649f66eabb18af4b8a41",
+                "reference": "26a4079d6d279673e957649f66eabb18af4b8a41",
                 "shasum": ""
             },
             "require": {
@@ -433,9 +433,9 @@
             "description": "Create Jira issues if it doesn't exist",
             "support": {
                 "issues": "https://github.com/reload/jira-security-issue/issues",
-                "source": "https://github.com/reload/jira-security-issue/tree/v1.1.1"
+                "source": "https://github.com/reload/jira-security-issue/tree/v2.0.0"
             },
-            "time": "2024-04-15T04:07:25+00:00"
+            "time": "2024-04-16T08:05:22+00:00"
         },
         {
             "name": "symfony/console",
