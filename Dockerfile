@@ -1,4 +1,4 @@
-FROM composer:2.7.7@sha256:1a9ee3abd3768c1952ac9a5d655df01b7fff01e2ccfe2cde3ced707165cc5df1 AS build-env
+FROM composer:2.7.7@sha256:94ccec0ad96b5736f86c4ef079d38c97f708ae83f22dab3376565aa55e806c8b AS build-env
 
 COPY . /opt/dependency-check-jira
 
